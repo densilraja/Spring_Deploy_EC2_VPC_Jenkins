@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <section>
+    <!-- Main Content -->
+    <main class="flex-fill min-vh-100 text-center d-flex flex-column justify-content-center">
+        <div class="container my-5">
+            <h1 class="display-4">Welcome to rod only Group</h1>
+            <p class="lead">Your content goes here.</p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="touristCarousel" class="carousel slide pb-3" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Coorg Image Slide -->
+                        <div class="carousel-item active">
+                            <div class="position-relative overflow-hidden text-center">
+                                <img src="https://www.coorgwildernessresort.in/images/our-diaries/a-land-of-historical-sites-waterfalls-scenic-rivers/a-land-of-historical-sites-waterfalls-scenic-rivers-1.jpg" 
+                                     alt="Coorg" 
+                                     class="img-fluid w-100" 
+                                     style="height: 400px; object-fit: cover;">
+                                <div class="position-absolute top-50 start-50 translate-middle text-white" 
+                                     style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                                    <h1 class="display-5 font-weight-bold">Coorg</h1>
+                                    <p class="lead">Coorg or Kodagu- is known for its serenity, and nature's bounty.</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Mysore Image Slide -->
+                        <div class="carousel-item">
+                            <div class="position-relative overflow-hidden text-center">
+                                <img src="https://royalsamrattravels.in/wp-content/uploads/2023/02/Mysore-Palace-One-of-The-Most-Famous-Tourist-Places-in-Mysore.jpg" 
+                                     alt="Mysore" 
+                                     class="img-fluid w-100" 
+                                     style="height: 400px; object-fit: cover;">
+                                <div class="position-absolute top-50 start-50 translate-middle text-white" 
+                                     style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                                    <h1 class="display-5 font-weight-bold">Mysore</h1>
+                                    <p class="lead">The city is also known as the City of Palaces</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bangalore Image Slide -->
+                        <div class="carousel-item">
+                            <div class="position-relative overflow-hidden text-center">
+                                <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/06/29184410/10-best-tourist-places-to-visit-in-Bangalore-and-must-visit-places-near-it-686x400.jpg" 
+                                    alt="Bangalore" 
+                                    class="img-fluid w-100" 
+                                    style="height: 400px; object-fit: cover;">
+                                <div class="position-absolute top-50 start-50 translate-middle text-white" 
+                                    style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                                    <h1 class="display-5 font-weight-bold">Bangalore</h1>
+                                    <p class="lead">The city is also known as the City of Palaces</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kalaburgi -->
+                        <div class="carousel-item">
+                            <div class="position-relative overflow-hidden text-center">
+                                <img src="https://karnatakatourism.org/wp-content/uploads/2020/06/kalaburagi_fort.jpg" 
+                                    alt="Kalaburgi" 
+                                    class="img-fluid w-100" 
+                                    style="height: 400px; object-fit: cover;">
+                                <div class="position-absolute top-50 start-50 translate-middle text-white" 
+                                    style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                                    <h1 class="display-5 font-weight-bold">Kalaburgi</h1>
+                                    <p class="lead">Kalaburagi is a city bursting with charm</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Belagavi  -->
+                        <div class="carousel-item">
+                            <div class="position-relative overflow-hidden text-center">
+                                <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-kamal-basti-belgaum-karnataka-attr-hero?qlt=82&ts=1726717486983" 
+                                    alt="Belagavi " 
+                                    class="img-fluid w-100" 
+                                    style="height: 400px; object-fit: cover;">
+                                <div class="position-absolute top-50 start-50 translate-middle text-white" 
+                                    style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                                    <h1 class="display-5 font-weight-bold">Belagavi</h1>
+                                    <p class="lead">Belagavi is one of the oldest, and well cultured historical place high in the Western Ghats</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hubli  -->
+                        <div class="carousel-item">
+                            <div class="position-relative overflow-hidden text-center">
+                                <img src="https://s3.india.com/wp-content/uploads/2024/09/lesser-kmown-hubli.jpg" 
+                                    alt="Hubli " 
+                                    class="img-fluid w-100" 
+                                    style="height: 400px; object-fit: cover;">
+                                <div class="position-absolute top-50 start-50 translate-middle text-white" 
+                                    style="background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                                    <h1 class="display-5 font-weight-bold">Hubli</h1>
+                                    <p class="lead">HUBBALLI is a city of best food best culture</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Carousel Controls (optional) -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#touristCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#touristCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                
+                
+                <div class="col-md-4" th:each="product : ${products}">
+                    <div class="card mb-4 shadow-sm">
+                        <img th:if="${product.base64Image}" 
+                             th:src="'data:image/jpeg;base64,' + ${product.base64Image}" 
+                             class="card-img-top" 
+                             alt="Product Image" 
+                             style="width: 100%; height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title" th:text="${product.productName}">Product Name</h5>
+                            <p class="card-text" th:text="${product.productDescription}">Product Description</p>
+                            <p class="card-text">
+                                <strong th:text="${product.price}">Product Price</strong>
+                            </p>
+                            <!-- <div class="form-group">
+                                <label for="quantity">Select Quantity:</label>
+                                <input class="form-control" type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                            </div>
+                            <button class="btn btn-primary mt-2" type="button">Add to Cart</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>    
+    <!-- Main Content -->
+</section>
+</body>
+</html>

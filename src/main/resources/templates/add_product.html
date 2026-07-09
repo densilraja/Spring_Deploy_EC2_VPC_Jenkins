@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <!-- Bootstrap CSS -->
+</head>
+<body>
+    <section class="text-center">
+        <div class="container mt-5 p-5">
+            <h1 class="fs-4 text-center mb-4">Add New Product</h1>
+            <form th:action="@{/admin/add_product}" th:object="${product}" method="post" class="mx-auto col-md-6" enctype="multipart/form-data">
+                <div class="row p-3"> 
+                    <div class="col">
+                        <label class="form-label" for="productName">Product Name:</label>
+                        <input class="form-control" type="text" id="productName" th:field="*{productName}" required placeholder="Enter product name" />
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="price">Price:</label>
+                        <input class="form-control" type="number" step="0.01" id="price" th:field="*{price}" required placeholder="Enter product price" />
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <label class="form-label" for="quantity">Quantity:</label>
+                        <input class="form-control" type="number" step="0" id="quantity" th:field="*{quantity}" required placeholder="Enter product price" />
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="productDescription">Product Description:</label>
+                        <textarea class="form-control" tyep="text" id="productDescription" th:field="*{productDescription}" required placeholder="Enter product description"></textarea>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col">
+                        <label class="form-label" for="productImage">Product Image:</label>
+                        <input class="form-control" type="file" id="productImage" name="image" required/>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary col-md-3">Add Product</button>
+            </form>
+            <div class="card-footer text-center">
+                <a href="/admin/admin_dash" class="text-decoration-none">Admin Dashboard</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

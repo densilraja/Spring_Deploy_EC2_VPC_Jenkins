@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymleaf.org" th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <section class="container mt-5 text-center">
+        <h1 class="mb-3 ">Admin Dashboard</h1>
+        <h2 class="mb-3">Details</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-start">
+            <a href="/admin/user_list" class="btn btn-primary me-md-2 mb-2 mb-md-0">UserList</a>
+            <a href="/admin/add_product" class="btn btn-primary me-md-2 mb-2 mb-md-0">AddProduct</a>
+            <a href="/admin/get_product" class="btn btn-primary me-md-2 mb-2 mb-md-0">GetProduct</a>
+            <a href="/admin/logout" class="btn btn-danger">Logout</a>
+        </div>
+    </section>
+</body>
+</html>

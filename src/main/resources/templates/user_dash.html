@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" th:replace="~{base::layout(~{::section})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron text-center">
+                    <h1 class="display-4">Welcome to User Dashboard</h1>
+                    <p class="lead">Manage your account and explore our features</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile</h5>
+                        <p class="card-text">View and edit your profile information</p>
+                        <a href="#" class="btn btn-primary">Go to Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Settings</h5>
+                        <p class="card-text">Customize your account settings</p>
+                        <a href="#" class="btn btn-primary">Go to Settings</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Messages</h5>
+                        <p class="card-text">Check your inbox and send messages</p>
+                        <a href="#" class="btn btn-primary">Go to Messages</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="/login" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
