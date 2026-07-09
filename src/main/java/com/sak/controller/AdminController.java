@@ -25,7 +25,7 @@ import jakarta.servlet.annotation.MultipartConfig;
 public class AdminController {
 
     @Autowired
-    private UserRepository userRepository
+    private UserRepository userRepository;
 
     @Autowired
     private ProductService productService;
